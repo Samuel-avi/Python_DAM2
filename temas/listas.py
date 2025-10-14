@@ -57,4 +57,3 @@ if 4 in lista3: # no in
 
 
 
-
