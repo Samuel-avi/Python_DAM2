@@ -4,6 +4,8 @@ lista3 = [2,4,5,6,7,12, 6, 6]
 lista4 = [23, "hola", False, lista3, [1,2,3]]
 #print(lista4)
 
+#e cadena = " ".join(lista)
+
 #for elemento in lista:
 #    print(elemento)
 
