@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Resumen de funciones del módulo math en Python
-Incluye ejemplos y resultados
-Autor: ChatGPT
 """
 
 import math
