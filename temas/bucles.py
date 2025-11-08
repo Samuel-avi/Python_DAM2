@@ -1,88 +1,93 @@
+# ====================================================
+# APUNTES DE CONDICIONALES, BUCLES Y CADENAS EN PYTHON
+# ====================================================
+
+# --- Condicionales ---
 edad = 22
+
 if edad == 60:
     print("Ya deberías estar jubilado")
 elif edad == 20:
     print("A trabajar!!!")
 else:
-    pass
-print("Fin del programa")
+    print("Edad no contemplada")
 
+print("Fin del programa\n")
+
+# --- Bucles for con range() ---
+
+# range(inicio, fin, paso)
 for d in range(0, 50, 8):
-    print(d,)
+    print(d)
+print()  # salto de línea
 
-for n in range(0,5):
-    print(n,)
+for n in range(5):  # range(0, 5) es equivalente
+    print(n)
+print()
 
-for ne in range(0,50,5):
-    print(ne,)
+for numero in range(0, 50, 5):
+    print(numero)
+print()
 
+# --- Recorrer una cadena ---
+for caracter in "Hola mundo":
+    print(caracter, end=" ")
+print("\n")
 
-for c in "Hola mundo":
-    print(c, end=" ")
-
+# --- Bucle while ---
 i = 0
 while i < 10:
     print(i)
-    i+=1
+    i += 1
+print()
 
-# for c in texto
-
+# --- Ejemplo: recorrer un texto por índice ---
 texto = "hola mundo"
-for i in range (0,len(texto)):
-    print(i, " - ", texto[i])
 
-print(texto[3:8]) # :8 --> desde la primera hasta la 7, 3: ---> desde la tercera hasta la última
+for i in range(len(texto)):
+    print(i, "-", texto[i])
+print()
 
-print(texto[-2]) # empieza a contar desde el final de la cadena
+# --- Slicing de cadenas ---
+print(texto[3:8])   # desde el índice 3 hasta el 7
+print(texto[-2])    # segundo carácter desde el final
+print()
 
-#clase String
+# --- Métodos de clase String ---
+print(texto.upper())              # mayúsculas
+print(texto.lower())              # minúsculas
+print(texto.swapcase())           # invierte mayúsculas/minúsculas
+print(texto[2:].find("o"))        # busca "o" desde el índice 2
+print(texto.count("o"))           # cuenta cuántas "o" hay
+print(texto.replace("mun", "MUN"))  # reemplaza subcadena
+print()
 
-print(texto.upper())
-print(texto.lower())
-print(texto.swapcase())
-print(texto[2:].find("o"))
-print(texto.count("o"))
-print(texto.replace("mun", "MUN"))
+# --- Bucle anidado (ejemplo adicional) ---
+for fila in range(3):
+    for columna in range(2):
+        print(f"Fila {fila}, Columna {columna}")
+print()
 
-#tex = texto.__reversed__()
-#print(tex)
+# --- Ejemplo de control de flujo con continue y break ---
+for i in range(6):
+    if i == 3:
+        continue  # salta el número 3
+    if i == 5:
+        break     # termina el bucle al llegar a 5
+    print(i)
+print()
 
-opcion = input("P para jugac C para cofigurar o X para dsalir: ")
+# --- Estructura match-case (Python 3.10+) ---
+opcion = input("P para jugar, C para configurar o X para salir: ")
 
-match opcion:
-    case "P" | "p":
+match opcion.lower():  # convierte a minúsculas para simplificar
+    case "p":
         print("Has elegido jugar")
-    case "C" | "c":
+    case "c":
         print("Has elegido configurar")
-    case "X" | "x":
+    case "x":
         print("Has elegido salir")
     case _:
-        print("Opcion no valida")
+        print("Opción no válida")
+
 print("Fin del menú")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
