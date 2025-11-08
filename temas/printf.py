@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 APUNTES DE REGEX Y PRINTF EN PYTHON
-Incluye: expresiones regulares (regex) con el módulo re y formateo de cadenas al estilo printf
+Incluye: formateo de cadenas al estilo printf
 """
 
 # ========================================
