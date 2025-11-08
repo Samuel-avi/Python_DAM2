@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-APUNTES DE REGEX Y PRINTF EN PYTHON
+APUNTES DE PRINTF EN PYTHON
 Incluye: formateo de cadenas al estilo printf
 """
 
